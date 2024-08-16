@@ -9,6 +9,7 @@ body {
 
 .header {
     background-color: #1f2937;
+    padding: 16px;
 }
 
 h1 {
@@ -47,4 +48,6 @@ h1 {
 .awesome {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
