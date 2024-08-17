@@ -82,3 +82,24 @@ h1 {
     gap: 32px;
     flex-wrap: wrap;
 }
+
+.para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.action {
+    background-color: blue;
+    color: yellow;
+}
