@@ -97,9 +97,36 @@ h1 {
 .footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: blue;
     color: yellow;
 }
+
+.second {
+    display: flex;
+    flex-direction: column;
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #eeeeee;
+    height: 2.5em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
