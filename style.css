@@ -1,12 +1,17 @@
+/* Reset body margin and center content */
 body {
     margin: 0 auto;
+    font-family: sans-serif;
+    line-height: 1.5;
 }
 
+/* Container flex row utility (not used in your HTML yet) */
 .div {
     display: flex;
     flex-direction: row;
 }
 
+/* Header main styling */
 .header {
     display: flex;
     flex-direction: column;
@@ -14,119 +19,158 @@ body {
     padding: 48px;
 }
 
+/* Heading style */
 h1 {
     font-size: 48px;
-    font-weight: 800px;
+    font-weight: 800; /* fixed from 800px */
     color: #f9faf8;
 }
 
-.header-links, .footer {
+/* Header nav and footer share similar layout */
+.header-links,
+.footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 8px;
-    text-decoration: none;
     list-style-type: none;
 }
 
+/* Left nav text style */
 .left-links {
     font-size: 24px;
     color: #f9faf8;
 }
 
+/* Right nav text style */
 .right-links {
     font-size: 18px;
     color: #e5e7eb;
-    gap: 10px;
-}
-
-.left-links, .right-links {
+    gap: 16px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
+    align-items: center;
 }
 
+/* Hero section */
 .awesome {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    margin-top: 32px;
+    gap: 32px;
 }
 
+/* Hero text section */
 .left-awesome {
     color: white;
+    flex: 1;
 }
 
+/* Hero image */
+.right-awesome img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Picture grid container */
 .Pictures {
     display: flex;
-    flex: 1;
-    align-items: center;
     justify-content: center;
-}
-
-.text {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    font-weight: 800;
-    align-items: center;
-    justify-content: center;
-    margin-top: 16px;
-}
-
-.sub-sect {
-    display: flex;
-    flex-direction: row;
-    padding: 48px;
-    gap: 32px;
+    padding: 32px 16px;
     flex-wrap: wrap;
 }
 
+/* Picture heading */
+.text {
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 16px;
+    width: 100%;
+}
+
+/* Grid of element icons */
+.sub-sect {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+/* Each image box */
+.sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Quote section */
 .para {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: #e5e7eb;
     font-size: 36px;
     color: #1f2937;
     font-style: italic;
+    padding: 48px 16px;
+    text-align: center;
 }
 
+/* Call to action section */
 .footer {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    justify-content: center; /* centers horizontally */
+    align-items: center;      /* centers vertically */
+    padding: 48px;
+    background-color: #1f2937;
+    color: white;
 }
 
+/* CTA container */
 .action {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: blue;
-    color: yellow;
+    background-color: #3b82f6;
+    padding: 24px 48px;
+    border-radius: 12px;
+    gap: 32px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
 }
 
+/* CTA text */
 .second {
     display: flex;
     flex-direction: column;
 }
 
-.last {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* CTA button */
+.last button {
+    padding: 10px 24px;
+    border: none;
+    background-color: white;
+    color: #3b82f6;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
+.last button:hover {
+    background-color: #e5e7eb;
+}
+
+/* Bottom footer */
 footer {
     background-color: #eeeeee;
     height: 2.5em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-  }
+}
+
